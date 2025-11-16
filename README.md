@@ -149,7 +149,7 @@ docker run -p 5000:5000 workout-recommendation
 
 ---
 
-## 🚀 Running the Project
+## Running the Project
 
 ### 1. Data Exploration (Optional)
 
@@ -299,7 +299,7 @@ This project successfully demonstrates:
 ### Base URL
 
 **Local**: `http://localhost:5000`  
-**Production**: `https://YOUR-APP.up.railway.app`
+**Production**: `https://workout-recommendation-production.up.railway.app/`
 
 ### Endpoints
 
@@ -383,7 +383,7 @@ Content-Type: application/json
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### Local Deployment with Docker
 
