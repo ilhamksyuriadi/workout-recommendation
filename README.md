@@ -2,7 +2,7 @@
 
 A machine learning-based system that recommends workout types (Cardio, Strength, Yoga, or HIIT) based on user physical attributes and fitness metrics.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Problem Description](#problem-description)
 - [Dataset](#dataset)
@@ -44,7 +44,7 @@ This is a **multi-class classification problem** with 4 target classes:
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 **Source**: [Kaggle - Gym Members Exercise Dataset](https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset)
 
@@ -84,7 +84,7 @@ This is a **multi-class classification problem** with 4 target classes:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 workout-recommendation/
@@ -93,8 +93,9 @@ workout-recommendation/
 │   └── gym_members_exercise_tracking.csv    # Raw dataset
 │
 ├── models/
-│   ├── data_prepared.pkl                    # Preprocessed data
-│   └── final_model.pkl                      # Trained XGBoost model
+│   ├── data_prepared.pkl                    # Preprocessed data (train/val/test splits, scaler)
+│   ├── best_model.pkl                       # Best model from notebook
+│   └── final_model.pkl                      # Final trained model (used by predict.py)
 │
 ├── notebook.ipynb                           # Jupyter notebook with EDA
 ├── train.py                                 # Model training script
@@ -108,7 +109,7 @@ workout-recommendation/
 
 ---
 
-## 🔧 Installation
+## Installation
 
 ### Prerequisites
 
@@ -120,7 +121,7 @@ workout-recommendation/
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/workout-recommendation.git
+git clone https://github.com/ilhamksyuriadi/workout-recommendation.git
 cd workout-recommendation
 
 # Create virtual environment
@@ -217,7 +218,7 @@ curl -X POST http://localhost:5000/predict \
 
 ---
 
-## 📈 Model Performance
+## Model Performance
 
 ### Models Compared
 
@@ -293,7 +294,7 @@ This project successfully demonstrates:
 
 ---
 
-## 🌐 API Documentation
+## API Documentation
 
 ### Base URL
 
@@ -401,7 +402,7 @@ open http://localhost:5000
 
 The application is deployed on Railway and accessible at:
 
-**🌐 Live URL**: `https://YOUR-APP.up.railway.app`
+**🌐 Live URL**: `https://workout-recommendation-production.up.railway.app/`
 
 **Deployment Steps:**
 
@@ -418,7 +419,7 @@ No environment variables required for basic functionality. All configurations ar
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Machine Learning
 - **scikit-learn** (1.3.0) - ML algorithms and preprocessing
@@ -428,7 +429,6 @@ No environment variables required for basic functionality. All configurations ar
 
 ### Web Framework
 - **Flask** (3.0.0) - Web API
-- **gunicorn** - WSGI server (for production)
 
 ### Visualization
 - **matplotlib** (3.7.2) - Plotting
@@ -444,7 +444,7 @@ No environment variables required for basic functionality. All configurations ar
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 ### Model Enhancements
 1. **Feature Engineering**
@@ -485,28 +485,18 @@ No environment variables required for basic functionality. All configurations ar
 
 ---
 
-## 📝 License
-
-This project is for educational purposes as part of a Machine Learning course.
-
----
-
-## 👤 Author
+## Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
+- GitHub: [ilhamksyuriadi](https://github.com/ilhamksyuriadi)
+- LinkedIn: [Ilham Kurnia Syuriadi](https://www.linkedin.com/in/ilhamksyuriadi/)
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Dataset from [Kaggle - Gym Members Exercise Dataset](https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset)
 - ML Zoomcamp course for project structure and guidance
 - Railway for free hosting credits
 
 ---
-
-## 📞 Contact
-
-For questions or feedback, please open an issue on GitHub or contact me at [your-email@example.com]
