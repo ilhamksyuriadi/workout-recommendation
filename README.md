@@ -17,7 +17,7 @@ A machine learning-based system that recommends workout types (Cardio, Strength,
 
 ---
 
-## Problem Description 🎯
+## Problem Description
 
 ### The Challenge
 
